@@ -1,0 +1,70 @@
+Versão corrigida e completa da Eneeb.
+
+Mantém:
+- Site premium completo
+- Carrinho lateral
+- Finalização por WhatsApp
+- Busca
+- Filtros
+- Instagram
+- Avaliações
+- Menu responsivo
+
+Adicionado:
+- Popup premium ao clicar em 'Ver detalhes'
+- Foto grande
+- Tamanhos
+- Preço
+- Botão adicionar ao carrinho
+- Botão comprar no WhatsApp
+
+Importante:
+Coloque logo.png na pasta principal.
+Coloque a pasta imagens junto do index.html com os mesmos nomes usados no script.js.
+
+
+PÁGINAS DE PRODUTO:
+- O site agora tem produto.html, produto.css e produto.js.
+- No site principal, clique em "Abrir página premium".
+- Cada produto abre em produto.html?id=1, produto.html?id=2 etc.
+- A página premium usa os mesmos produtos do script e mantém carrinho pelo localStorage.
+
+
+BANNER EM VÍDEO:
+- A pasta videos foi adicionada.
+- Coloque um vídeo com o nome hero-eneeb.mp4 dentro da pasta videos.
+- Estrutura:
+  videos/hero-eneeb.mp4
+- O vídeo roda automaticamente sem som no banner inicial.
+- Se não tiver vídeo ainda, o site continua mostrando a imagem de capa normalmente.
+
+INSTAGRAM:
+- Widget Elfsight já integrado no index.html.
+
+
+UPGRADE ANIMAÇÕES PREMIUM:
+- Header muda ao rolar.
+- Loading cinematográfico.
+- Botões com brilho premium.
+- Cards com hover 3D.
+- Parallax leve no banner.
+- WhatsApp pulsando.
+- Animações suaves ao rolar.
+
+
+UPGRADE FAVORITOS:
+- Botão de coração nos produtos.
+- Seção Meus Favoritos.
+- Favoritos salvos no navegador com localStorage.
+- Página do produto também tem botão de favoritar.
+
+
+PAINEL ADMIN INTEGRADO:
+- Abra admin.html para adicionar produtos sem mexer em código.
+- Os produtos adicionados pelo painel aparecem no index.html automaticamente no mesmo navegador.
+- Para imagem, coloque o arquivo dentro da pasta imagens e use o caminho: imagens/nome-da-foto.png
+- Exemplo de tamanhos: P, M, G, GG
+
+IMPORTANTE:
+Este painel simples usa localStorage, então salva no navegador/dispositivo usado.
+Para um painel online compartilhado entre vários celulares/computadores, precisa de banco de dados/hospedagem.

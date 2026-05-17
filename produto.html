@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Produto | Eneeb</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="produto.css" />
+</head>
+<body>
+
+  <header class="product-header">
+    <a href="index.html" class="product-logo">
+      <img src="logo.png" alt="Logo Eneeb">
+    </a>
+
+    <nav>
+      <a href="index.html">Voltar para loja</a>
+      <a href="index.html#produtos">Produtos</a>
+      <a href="https://instagram.com/eneeb_" target="_blank">Instagram</a>
+      <a class="whats-link" href="https://wa.me/5531985185956?text=Olá,%20vim%20pelo%20site%20da%20Eneeb." target="_blank">WhatsApp</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-page">
+      <div class="gallery">
+        <div class="main-image-wrap">
+          <img id="mainImage" src="" alt="">
+        </div>
+
+        <div class="thumbs" id="thumbs"></div>
+      </div>
+
+      <div class="product-info">
+        <span class="tag" id="tag">Premium</span>
+        <h1 id="title">Produto Eneeb</h1>
+        <p id="desc">Descrição do produto.</p>
+
+        <div class="price" id="price">R$ 0,00</div>
+
+        <div class="sizes-box">
+          <strong>Tamanhos disponíveis</strong>
+          <div class="sizes" id="sizes"></div>
+        </div>
+
+        <div class="benefits">
+          <div>
+            <strong>Atendimento rápido</strong>
+            <span>Pedido direto pelo WhatsApp</span>
+          </div>
+          <div>
+            <strong>Produto selecionado</strong>
+            <span>Peça com visual premium</span>
+          </div>
+          <div>
+            <strong>Compra simples</strong>
+            <span>Confirme tamanho e disponibilidade</span>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="addFavorite">Salvar nos favoritos ♥</button>
+          <button id="addCart">Adicionar ao carrinho</button>
+          <a id="whatsappBtn" target="_blank">Comprar no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="details">
+      <div>
+        <h2>Detalhes da peça</h2>
+        <p id="longDesc">
+          Peça premium Eneeb criada para compor looks modernos, elegantes e versáteis.
+        </p>
+      </div>
+
+      <div class="detail-card">
+        <strong>Como comprar?</strong>
+        <p>Clique em comprar no WhatsApp e confirme cor, tamanho, disponibilidade e forma de pagamento.</p>
+      </div>
+
+      <div class="detail-card">
+        <strong>Dica de estilo</strong>
+        <p>Combine com calças, tênis e acessórios para montar um look completo Eneeb.</p>
+      </div>
+    </section>
+
+    <section class="related">
+      <h2>Você também pode gostar</h2>
+      <div class="related-grid" id="relatedGrid"></div>
+    </section>
+  </main>
+
+  <script src="supabase.js"></script>
+  <script src="produto.js"></script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Eneeb | Moda Masculina Premium</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="loader" id="loader">
+    <div class="loader-logo">ENEEB</div>
+  </div>
+
+  <header class="header">
+    <a href="#inicio" class="brand">
+      <img src="logo.png" alt="Logo Eneeb">
+    </a>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav class="nav" id="nav">
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#favoritos">Favoritos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#instagram">Instagram</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <button class="cart-btn" id="openCart">Carrinho <span id="cartCount">0</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero video-hero" id="inicio">
+      <video class="hero-video" autoplay muted loop playsinline poster="imagens/lookvinho.png">
+        <source src="videos/hero-eneeb.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay"></div>
+
+      <div class="hero-content reveal">
+        <span class="badge">Nova coleção • Vídeo premium</span>
+        <h1>Vista presença. Vista Eneeb.</h1>
+        <p>Moda masculina premium com peças selecionadas, visual moderno e compra rápida direto pelo WhatsApp.</p>
+
+        <div class="hero-actions">
+          <a href="#produtos" class="btn primary">Ver coleção</a>
+          <a href="https://wa.me/5531985185956?text=Olá,%20vim%20pelo%20site%20da%20Eneeb%20e%20quero%20ver%20as%20peças." target="_blank" class="btn secondary">Chamar no WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="hero-card reveal">
+        <img src="imagens/lookvinho.png" alt="Look premium Eneeb">
+        <div class="hero-card-info">
+          <strong>Drop premium</strong>
+          <span>@eneeb_</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo reveal">
+      <div>
+        <span>LANÇAMENTO</span>
+        <h2>Peças limitadas da coleção Eneeb</h2>
+        <p>Escolha seus produtos, adicione ao carrinho e finalize tudo pelo WhatsApp.</p>
+      </div>
+      <a href="#produtos" class="btn primary">Comprar agora</a>
+    </section>
+
+    <section class="features">
+      <div class="feature reveal">
+        <strong>Atendimento rápido</strong>
+        <span>Pedido enviado direto no WhatsApp</span>
+      </div>
+      <div class="feature reveal">
+        <strong>Carrinho inteligente</strong>
+        <span>Adicione várias peças antes de finalizar</span>
+      </div>
+      <div class="feature reveal">
+        <strong>Estilo premium</strong>
+        <span>Looks masculinos modernos</span>
+      </div>
+    </section>
+
+    <section class="section" id="produtos">
+      <div class="section-head reveal">
+        <span class="badge dark">Coleção Eneeb</span>
+        <h2>Produtos em destaque</h2>
+        <p>Use a busca, filtre por categoria e adicione as peças no carrinho.</p>
+      </div>
+
+      <div class="shop-tools reveal">
+        <input type="text" id="searchInput" placeholder="Buscar produto... Ex: camiseta, calça, boné">
+
+        <div class="filter-bar">
+          <button class="filter active" data-category="todos">Todos</button>
+          <button class="filter" data-category="camisas">Camisas</button>
+          <button class="filter" data-category="calcas">Calças</button>
+          <button class="filter" data-category="looks">Looks</button>
+          <button class="filter" data-category="acessorios">Acessórios</button>
+          <button class="filter" data-category="calcados">Calçados</button>
+        </div>
+      </div>
+
+      <div class="products" id="products"></div>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="about-img reveal">
+        <img src="imagens/camisa-vermelha.png" alt="Camisa Eneeb">
+      </div>
+
+      <div class="about-text reveal">
+        <span class="badge">Sobre a marca</span>
+        <h2>Moda masculina com identidade premium.</h2>
+        <p>A Eneeb entrega peças masculinas modernas, elegantes e versáteis para quem busca presença no visual.</p>
+        <p>Com o carrinho pelo WhatsApp, o cliente escolhe as peças, tamanhos e envia o pedido completo em poucos cliques.</p>
+        <a class="btn primary" href="https://instagram.com/eneeb_" target="_blank">Ver Instagram</a>
+      </div>
+    </section>
+
+
+
+    <section class="section favorites-section" id="favoritos">
+      <div class="section-head reveal">
+        <span class="badge dark">Favoritos</span>
+        <h2>Meus favoritos</h2>
+        <p>Salve as peças que mais gostou e finalize tudo pelo WhatsApp depois.</p>
+      </div>
+
+      <div class="products favorites-grid" id="favoritesGrid"></div>
+    </section>
+
+
+    <section class="instagram-section" id="instagram">
+      <div class="section-head reveal">
+        <span class="badge dark">Instagram</span>
+        <h2>Direto do @eneeb_</h2>
+        <p>Acompanhe novidades, provas reais, reposições e lançamentos da loja no Instagram.</p>
+      </div>
+
+      <div class="instagram-grid reveal">
+        <a href="https://instagram.com/eneeb_" target="_blank" class="insta-card big">
+          <img src="imagens/lookvinho.png" alt="Instagram Eneeb">
+          <div>
+            <span>@eneeb_</span>
+            <strong>Nova coleção</strong>
+          </div>
+        </a>
+
+        <a href="https://instagram.com/eneeb_" target="_blank" class="insta-card">
+          <img src="imagens/camisa-vermelha.png" alt="Post Eneeb">
+          <div>
+            <span>Look premium</span>
+            <strong>Ver no Instagram</strong>
+          </div>
+        </a>
+
+        <a href="https://instagram.com/eneeb_" target="_blank" class="insta-card">
+          <img src="imagens/bones.png" alt="Post Eneeb">
+          <div>
+            <span>Acessórios</span>
+            <strong>Ver no Instagram</strong>
+          </div>
+        </a>
+
+        <a href="https://instagram.com/eneeb_" target="_blank" class="insta-card">
+          <img src="imagens/lookpraia.png" alt="Post Eneeb">
+          <div>
+            <span>Look verão</span>
+            <strong>Ver no Instagram</strong>
+          </div>
+        </a>
+
+        <a href="https://instagram.com/eneeb_" target="_blank" class="insta-card">
+          <img src="imagens/tenis-branco.png" alt="Post Eneeb">
+          <div>
+            <span>Calçados</span>
+            <strong>Ver no Instagram</strong>
+          </div>
+        </a>
+      </div>
+
+      <div class="instagram-widget-box reveal">
+        <h3>Feed automático</h3>
+        <p>
+          Para deixar 100% automático, crie um widget em uma ferramenta de Instagram Feed e cole o código abaixo no lugar indicado.
+        </p>
+
+        <!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-f9cc8afb-9b94-425e-afa0-9321ea8e66bc" data-elfsight-app-lazy></div>
+
+        <a href="https://instagram.com/eneeb_" target="_blank" class="btn primary">Seguir @eneeb_</a>
+      </div>
+    </section>
+
+
+    <section class="section reviews" id="avaliacoes">
+      <div class="section-head reveal">
+        <span class="badge dark">Clientes</span>
+        <h2>Avaliações</h2>
+        <p>Uma experiência simples, rápida e profissional.</p>
+      </div>
+
+      <div class="review-grid">
+        <div class="review reveal">
+          <strong>★★★★★</strong>
+          <p>Visual muito bonito e atendimento rápido pelo WhatsApp.</p>
+          <span>Cliente Eneeb</span>
+        </div>
+
+        <div class="review reveal">
+          <strong>★★★★★</strong>
+          <p>Gostei demais do estilo das peças e da facilidade para pedir.</p>
+          <span>Cliente Eneeb</span>
+        </div>
+
+        <div class="review reveal">
+          <strong>★★★★★</strong>
+          <p>Site organizado, moderno e com produtos bem apresentados.</p>
+          <span>Cliente Eneeb</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta reveal">
+      <h2>Monte seu look agora</h2>
+      <p>Adicione as peças no carrinho e finalize o pedido pelo WhatsApp.</p>
+      <button class="btn primary" id="openCartCta">Abrir carrinho</button>
+    </section>
+  </main>
+
+
+  <div class="product-modal" id="productModal">
+    <div class="product-modal-box">
+      <button class="product-modal-close" id="closeProductModal">×</button>
+
+      <div class="product-modal-image">
+        <img id="modalImage" src="" alt="">
+      </div>
+
+      <div class="product-modal-info">
+        <span class="modal-tag" id="modalTag">Premium</span>
+        <h2 id="modalTitle">Produto Eneeb</h2>
+        <p id="modalDesc">Descrição do produto.</p>
+
+        <div class="modal-sizes" id="modalSizes"></div>
+
+        <strong class="modal-price" id="modalPrice">R$ 0,00</strong>
+
+        <div class="modal-actions">
+          <button class="btn primary" id="modalAddCart">Adicionar ao carrinho</button>
+          <a class="btn whatsapp-modal" id="modalWhatsapp" target="_blank">Comprar no WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <aside class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <div>
+        <h2>Seu carrinho</h2>
+        <p>Finalize pelo WhatsApp</p>
+      </div>
+      <button id="closeCart">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">R$ 0,00</strong>
+      </div>
+
+      <button class="checkout-btn" id="checkoutBtn">Finalizar pedido</button>
+      <button class="clear-btn" id="clearCart">Limpar carrinho</button>
+    </div>
+  </aside>
+
+  <div class="overlay" id="overlay"></div>
+
+  <footer class="footer">
+    <div>
+      <strong>ENEEB</strong>
+      <p>Moda Masculina Premium</p>
+    </div>
+
+    <div>
+      <p>WhatsApp: (31) 98518-5956</p>
+      <p>Instagram: @eneeb_</p>
+    </div>
+  </footer>
+
+  <a class="floating-whats" href="https://wa.me/5531985185956?text=Olá,%20vim%20pelo%20site%20da%20Eneeb%20e%20quero%20ver%20os%20produtos." target="_blank">☎</a>
+
+  <script src="supabase.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
